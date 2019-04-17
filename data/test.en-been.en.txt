@@ -1,0 +1,792 @@
+By the end of this year , there &apos;ll be nearly a billion people on this planet that actively use social networking sites .
+The one thing that all of them have in common is that they &apos;re going to die .
+While that might be a somewhat morbid thought , I think it has some really profound implications that are worth exploring .
+What first got me thinking about this was a blog post authored earlier this year by Derek K. Miller , who was a science and technology journalist who died of cancer .
+And what Miller did was have his family and friends write a post that went out shortly after he died .
+Here &apos;s what he wrote in starting that out .
+He said , &quot; &quot; Here it is . I &apos;m dead , and this is my last post to my blog .
+In advance , I asked that once my body finally shut down from the punishments of my cancer , then my family and friends publish this prepared message I wrote — the first part of the process of turning this from an active website to an archive . &quot; &quot; Now , while as a journalist , Miller &apos;s archive may have been better written and more carefully curated than most , the fact of the matter is that all of us today are creating an archive that &apos;s something completely different than anything that &apos;s been created by any previous generation .
+Consider a few stats for a moment .
+Right now there are 48 hours of video being uploaded to YouTube every single minute .
+There are 200 million Tweets being posted every day .
+And the average Facebook user is creating 90 pieces of content each month .
+So when you think about your parents or your grandparents , at best they may have created some photos or home videos , or a diary that lives in a box somewhere .
+But today we &apos;re all creating this incredibly rich digital archive that &apos;s going to live in the cloud indefinitely , years after we &apos;re gone .
+And I think that &apos;s going to create some incredibly intriguing opportunities for technologists .
+Now to be clear , I &apos;m a journalist and not a technologist , so what I &apos;d like to do briefly is paint a picture of what the present and the future are going to look like .
+Now we &apos;re already seeing some services that are designed to let us decide what happens to our online profile and our social media accounts after we die .
+One of them actually , fittingly enough , found me when I checked into a deli at a restaurant in New York on foursquare .
+( Recording ) Adam Ostrow : Hello .
+Death : Adam ?
+AO : Yeah .
+Death : Death can catch you anywhere , anytime , even at the Organic .
+AO : Who is this ?
+Death : Go to ifidie.net before it &apos;s too late .
+( Laughter ) Adam Ostrow : Kind of creepy , right ?
+So what that service does , quite simply , is let you create a message or a video that can be posted to Facebook after you die .
+Another service right now is called 1,000 Memories .
+And what this lets you do is create an online tribute to your loved ones , complete with photos and videos and stories that they can post after you die .
+But what I think comes next is far more interesting .
+Now a lot of you are probably familiar with Deb Roy who , back in March , demonstrated how he was able to analyze more than 90,000 hours of home video .
+I think as machines &apos; ability to understand human language and process vast amounts of data continues to improve , it &apos;s going to become possible to analyze an entire life &apos;s worth of content — the Tweets , the photos , the videos , the blog posts — that we &apos;re producing in such massive numbers .
+And I think as that happens , it &apos;s going to become possible for our digital personas to continue to interact in the real world long after we &apos;re gone thanks to the vastness of the amount of content we &apos;re creating and technology &apos;s ability to make sense of it all .
+Now we &apos;re already starting to see some experiments here .
+One service called My Next Tweet analyzes your entire Twitter stream , everything you &apos;ve posted onto Twitter , to make some predictions as to what you might say next .
+Well right now , as you can see , the results can be somewhat comical .
+You can imagine what something like this might look like five , 10 or 20 years from now as our technical capabilities improve .
+Taking it a step further , MIT &apos;s media lab is working on robots that can interact more like humans .
+But what if those robots were able to interact based on the unique characteristics of a specific person based on the hundreds of thousands of pieces of content that person produces in their lifetime ?
+Finally , think back to this famous scene from election night 2008 back in the United States , where CNN beamed a live hologram of hip hop artist will.i.am into their studio for an interview with Anderson Cooper .
+What if we were able to use that same type of technology to beam a representation of our loved ones into our living rooms — interacting in a very lifelike way based on all the content they created while they were alive ?
+I think that &apos;s going to become completely possible as the amount of data we &apos;re producing and technology &apos;s ability to understand it both expand exponentially .
+Now in closing , I think what we all need to be thinking about is if we want that to become our reality — and if so , what it means for a definition of life and everything that comes after it .
+Thank you very much .
+( Applause )
+&quot; &quot; When the crisis came , the serious limitations of existing economic and financial models immediately became apparent . &quot; &quot; &quot; &quot; There is also a strong belief , which I share , that bad or oversimplistic and overconfident economics helped create the crisis . &quot; &quot; Now , you &apos;ve probably all heard of similar criticism coming from people who are skeptical of capitalism .
+The first quote is from Jean-Claude Trichet when he was governor of the European Central Bank .
+The second quote is from the head of the UK Financial Services Authority .
+Do we really understand more about the fabric of reality than we do about the fabric which emerges from our human interactions ?
+Unfortunately , the answer is yes .
+But there &apos;s an intriguing solution which is coming from what is known as the science of complexity .
+So you take a chunk of reality you want to understand and you translate it into mathematics .
+Then , predictions can be made and tested .
+We &apos;re actually really lucky that this works , because no one really knows why the thoughts in our heads should actually relate to the fundamental workings of the universe .
+So these are systems which are made up of many interconnected or interacting parts : swarms of birds or fish , ant colonies , ecosystems , brains , financial markets .
+Interestingly , complex systems are very hard to map into mathematical equations , so the usual physics approach doesn &apos;t really work here .
+So what do we know about complex systems ?
+Well , it turns out that what looks like complex behavior from the outside is actually the result of a few simple rules of interaction .
+This means you can forget about the equations and just start to understand the system by looking at the interactions , so you can actually forget about the equations and you just start to look at the interactions .
+So this means that the system as a whole suddenly starts to show a behavior which cannot be understood or predicted by looking at the components of the system .
+So the whole is literally more than the sum of its parts .
+So what equations are for physics , complex networks are for the study of complex systems .
+This approach has been very successfully applied to many complex systems in physics , biology , computer science , the social sciences , but what about economics ?
+Where are economic networks ?
+What we looked at in detail was ownership networks .
+And the links represent the shareholding relations , so shareholder A has x percent of the shares in company B.
+And we also assign a value to the company given by the operating revenue .
+Now , you may think that no one looked at this before because ownership networks are really , really boring to study .
+How are they organized ? Are they isolated ?
+This is a lot of data , and because we wanted to find out &quot; who rules the world , &quot; we decided to focus on transnational corporations , or &quot; &quot; TNCs , &quot; &quot; for short .
+These are companies that operate in more than one country , and we found 43,000 .
+In the next step , we built the network around these companies , so we took all the TNCs &apos; shareholders , and the shareholders &apos; shareholders , etc . , all the way upstream , and we did the same downstream , and ended up with a network containing 600,000 nodes and one million links .
+So you have a periphery and a center which contains about 75 percent of all the players , and in the center , there &apos;s this tiny but dominant core which is made up of highly interconnected companies .
+So you have the suburbs and the periphery , you have a center , like a financial district , then the core will be something like the tallest high-rise building in the center .
+36 percent of the TNCs are in the core only , but they make up 95 percent of the total operating revenue of all TNCs .
+OK , so now we analyzed the structure , so how does this relate to the control ?
+This is very much in the sense of Max Weber &apos;s idea of potential power , which is the probability of imposing one &apos;s own will despite the opposition of others .
+Let me explain by giving you this analogy .
+So similarly , the control is flowing in the ownership networks and is accumulating at the nodes .
+Now remember , we started out with 600,000 nodes , so these 737 top players make up a bit more than 0.1 percent .
+And we could easily reproduce the TNC network with a few simple rules .
+It &apos;s an emergent property which depends on the rules of interaction in the system , so it &apos;s probably not the result of a top-down approach like a global conspiracy .
+And specifically , I want to talk about what &apos;s wrong with how we talk about love .
+Most of us will probably fall in love a few times over the course of our lives , and in the English language , this metaphor , falling , is really the main way that we talk about that experience .
+I don &apos;t know about you , but when I conceptualize this metaphor , what I picture is straight out of a cartoon — like there &apos;s a man , he &apos;s walking down the sidewalk , without realizing it , he crosses over an open manhole , and he just plummets into the sewer below .
+And I picture it this way because falling is not jumping .
+Falling is accidental , it &apos;s uncontrollable .
+It &apos;s something that happens to us without our consent .
+I am a writer and I &apos;m also an English teacher , which means I think about words for a living .
+You could say that I get paid to argue that the language we use matters , and I would like to argue that many of the metaphors we use to talk about love — maybe even most of them — are a problem .
+So , in love , we fall .
+We &apos;re struck .
+We are crushed .
+We swoon .
+We burn with passion .
+Love makes us crazy , and it makes us sick .
+Our hearts ache , and then they break .
+So our metaphors equate the experience of loving someone to extreme violence or illness .
+( Laughter ) They do .
+And they position us as the victims of unforeseen and totally unavoidable circumstances .
+My favorite one of these is &quot; &quot; smitten , &quot; &quot; which is the past participle of the word &quot; &quot; smite . &quot; &quot; And if you look this word up in the dictionary — ( Laughter ) you will see that it can be defined as both &quot; &quot; grievous affliction , &quot; &quot; and , &quot; &quot; to be very much in love . &quot; &quot; I tend to associate the word &quot; &quot; smite &quot; &quot; with a very particular context , which is the Old Testament .
+In the Book of Exodus alone , there are 16 references to smiting , which is the word that the Bible uses for the vengeance of an angry God .
+( Laughter ) Here we are using the same word to talk about love that we use to explain a plague of locusts . ( Laughter )
+Right ?
+So , how did this happen ?
+How have we come to associate love with great pain and suffering ?
+And why do we talk about this ostensibly good experience as if we are victims ?
+These are difficult questions , but I have some theories .
+And to think this through , I want to focus on one metaphor in particular , which is the idea of love as madness .
+When I first started researching romantic love , I found these madness metaphors everywhere .
+The history of Western culture is full of language that equates love to mental illness .
+These are just a few examples .
+William Shakespeare : &quot; Love is merely a madness , &quot; from &quot; &quot; As You Like It . &quot; &quot; Friedrich Nietzsche : &quot; There is always some madness in love . &quot;
+&quot; Got me looking , got me looking so crazy in love — &quot; ( Laughter ) from the great philosopher , Beyoncé Knowles . ( Laughter )
+I fell in love for the first time when I was 20 , and it was a pretty turbulent relationship right from the start .
+And it was long distance for the first couple of years , so for me that meant very high highs and very low lows .
+I can remember one moment in particular .
+I was sitting on a bed in a hostel in South America , and I was watching the person I love walk out the door .
+And it was late , it was nearly midnight , we &apos;d gotten into an argument over dinner , and when we got back to our room , he threw his things in the bag and stormed out .
+While I can no longer remember what that argument was about , I very clearly remember how I felt watching him leave .
+I was 22 , it was my first time in the developing world , and I was totally alone .
+I had another week until my flight home , and I knew the name of the town that I was in , and the name of the city that I needed to get to to fly out , but I had no idea how to get around .
+I had no guidebook and very little money , and I spoke no Spanish .
+Someone more adventurous than me might have seen this as a moment of opportunity , but I just froze .
+I just sat there .
+And then I burst into tears .
+But despite my panic , some small voice in my head thought , &quot; &quot; Wow . That was dramatic .
+I must really be doing this love thing right . &quot; &quot; ( Laughter ) Because some part of me wanted to feel miserable in love .
+And it sounds so strange to me now , but at 22 , I longed to have dramatic experiences , and in that moment , I was irrational and furious and devastated , and weirdly enough , I thought that this somehow legitimized the feelings I had for the guy who had just left me .
+I think on some level I wanted to feel a little bit crazy , because I thought that that was how loved worked .
+This really should not be surprising , considering that according to Wikipedia , there are eight films , 14 songs , two albums and one novel with the title &quot; &quot; Crazy Love . &quot; &quot; About half an hour later , he came back to our room .
+We made up .
+This must be a real romance . &quot; &quot; I expected my first love to feel like madness , and of course , it met that expectation very well .
+But loving someone like that — as if my entire well-being depended on him loving me back — was not very good for me or for him .
+But I suspect this experience of love is not that unusual .
+Most of us do feel a bit mad in the early stages of romantic love .
+In fact , there is research to confirm that this is somewhat normal , because , neurochemically speaking , romantic love and mental illness are not that easily distinguished .
+This is true .
+This study from 1999 used blood tests to confirm that the serotonin levels of the newly in love very closely resembled the serotonin levels of people who had been diagnosed with obsessive-compulsive disorder .
+( Laughter ) Yes , and low levels of serotonin are also associated with seasonal affective disorder and depression .
+So there is some evidence that love is associated with changes to our moods and our behaviors .
+And there are other studies to confirm that most relationships begin this way .
+Researchers believe that the low levels of serotonin is correlated with obsessive thinking about the object of love , which is like this feeling that someone has set up camp in your brain .
+And most of us feel this way when we first fall in love .
+But the good news is , it doesn &apos;t always last that long — usually from a few months to a couple of years .
+When I got back from my trip to South America , I spent a lot of time alone in my room , checking my email , desperate to hear from the guy I loved .
+I decided that if my friends could not understand my grievous affliction , then I did not need their friendship .
+So I stopped hanging out with most of them .
+And it was probably the most unhappy year of my life .
+But I think I felt like it was my job to be miserable , because if I could be miserable , then I would prove how much I loved him .
+And if I could prove it , then we would have to end up together eventually .
+This is the real madness , because there is no cosmic rule that says that great suffering equals great reward , but we talk about love as if this is true .
+Our experiences of love are both biological and cultural .
+Our biology tells us that love is good by activating these reward circuits in our brain , and it tells us that love is painful when , after a fight or a breakup , that neurochemical reward is withdrawn .
+And in fact — and maybe you &apos;ve heard this — neurochemically speaking , going through a breakup is a lot like going through cocaine withdrawal , which I find reassuring .
+( Laughter ) And then our culture uses language to shape and reinforce these ideas about love .
+In this case , we &apos;re talking about metaphors about pain and addiction and madness .
+It &apos;s kind of an interesting feedback loop .
+Love is powerful and at times painful , and we express this in our words and stories , but then our words and stories prime us to expect love to be powerful and painful .
+What &apos;s interesting to me is that all of this happens in a culture that values lifelong monogamy .
+It seems like we want it both ways : we want love to feel like madness , and we want it to last an entire lifetime .
+That sounds terrible .
+( Laughter ) To reconcile this , we need to either change our culture or change our expectations .
+So , imagine if we were all less passive in love .
+If we were more assertive , more open-minded , more generous and instead of falling in love , we stepped into love .
+I know that this is asking a lot , but I &apos;m not actually the first person to suggest this .
+In their book , &quot; &quot; Metaphors We Live By , &quot; &quot; linguists Mark Johnson and George Lakoff suggest a really interesting solution to this dilemma , which is to change our metaphors .
+They argue that metaphors really do shape the way we experience the world , and that they can even act as a guide for future actions , like self-fulfilling prophecies .
+Johnson and Lakoff suggest a new metaphor for love : love as a collaborative work of art .
+I really like this way of thinking about love .
+Linguists talk about metaphors as having entailments , which is essentially a way of considering all the implications of , or ideas contained within , a given metaphor .
+And Johnson and Lakoff talk about everything that collaborating on a work of art entails : effort , compromise , patience , shared goals .
+These ideas align nicely with our cultural investment in long-term romantic commitment , but they also work well for other kinds of relationships — short-term , casual , polyamorous , non-monogamous , asexual — because this metaphor brings much more complex ideas to the experience of loving someone .
+So if love is a collaborative work of art , then love is an aesthetic experience .
+Love is unpredictable , love is creative , love requires communication and discipline , it is frustrating and emotionally demanding .
+And love involves both joy and pain .
+Ultimately , each experience of love is different .
+When I was younger , it never occurred to me that I was allowed to demand more from love , that I didn &apos;t have to just accept whatever love offered .
+When 14-year-old Juliet first meets — or , when 14-year-old Juliet cannot be with Romeo , whom she has met four days ago , she does not feel disappointed or angsty .
+Where is she ?
+She wants to die .
+Right ?
+And just as a refresher , at this point in the play , act three of five , Romeo is not dead .
+He &apos;s alive , he &apos;s healthy , he &apos;s just been banished from the city .
+I understand that 16th-century Verona is unlike contemporary North America , and yet when I first read this play , also at age 14 , Juliet &apos;s suffering made sense to me .
+Reframing love as something I get to create with someone I admire , rather than something that just happens to me without my control or consent , is empowering .
+It &apos;s still hard .
+Love still feels totally maddening and crushing some days , and when I feel really frustrated , I have to remind myself : my job in this relationship is to talk to my partner about what I want to make together .
+This isn &apos;t easy , either .
+But it &apos;s just so much better than the alternative , which is that thing that feels like madness .
+This version of love is not about winning or losing someone &apos;s affection .
+Instead , it requires that you trust your partner and talk about things when trusting feels difficult , which sounds so simple , but is actually a kind of revolutionary , radical act .
+This is because you get to stop thinking about yourself and what you &apos;re gaining or losing in your relationship , and you get to start thinking about what you have to offer .
+This version of love allows us to say things like , &quot; Hey , we &apos;re not very good collaborators . Maybe this isn &apos;t for us . &quot;
+Or , &quot; &quot; That relationship was shorter than I had planned , but it was still kind of beautiful . &quot; &quot; The beautiful thing about the collaborative work of art is that it will not paint or draw or sculpt itself .
+This version of love allows us to decide what it looks like .
+Thank you .
+( Applause )
+So it &apos;s 1995 , I &apos;m in college , and a friend and I go on a road trip from Providence , Rhode Island to Portland , Oregon .
+And you know , we &apos;re young and unemployed , so we do the whole thing on back roads through state parks and national forests — basically the longest route we can possibly take .
+And somewhere in the middle of South Dakota , I turn to my friend and I ask her a question that &apos;s been bothering me for 2,000 miles .
+&quot; What &apos;s up with the Chinese character I keep seeing by the side of the road ? &quot;
+My friend looks at me totally blankly .
+There &apos;s actually a gentleman in the front row who &apos;s doing a perfect imitation of her look .
+( Laughter ) And I &apos;m like , &quot; &quot; You know , all the signs we keep seeing with the Chinese character on them . &quot; &quot; She just stares at me for a few moments , and then she cracks up , because she figures out what I &apos;m talking about .
+And what I &apos;m talking about is this .
+( Laughter ) Right , the famous Chinese character for picnic area . ( Laughter )
+I &apos;ve spent the last five years of my life thinking about situations exactly like this — why we sometimes misunderstand the signs around us , and how we behave when that happens , and what all of this can tell us about human nature .
+In other words , as you heard Chris say , I &apos;ve spent the last five years thinking about being wrong .
+This might strike you as a strange career move , but it actually has one great advantage : no job competition .
+( Laughter ) In fact , most of us do everything we can to avoid thinking about being wrong , or at least to avoid thinking about the possibility that we ourselves are wrong .
+We get it in the abstract .
+We all know everybody in this room makes mistakes .
+The human species , in general , is fallible — okay fine .
+But when it comes down to me , right now , to all the beliefs I hold , here in the present tense , suddenly all of this abstract appreciation of fallibility goes out the window — and I can &apos;t actually think of anything I &apos;m wrong about .
+And the thing is , the present tense is where we live .
+We go to meetings in the present tense ; we go on family vacations in the present tense ; we go to the polls and vote in the present tense .
+So effectively , we all kind of wind up traveling through life , trapped in this little bubble of feeling very right about everything .
+I think this is a problem .
+I think it &apos;s a problem for each of us as individuals , in our personal and professional lives , and I think it &apos;s a problem for all of us collectively as a culture .
+So what I want to do today is , first of all , talk about why we get stuck inside this feeling of being right .
+And second , why it &apos;s such a problem .
+And finally , I want to convince you that it is possible to step outside of that feeling and that if you can do so , it is the single greatest moral , intellectual and creative leap you can make .
+So why do we get stuck in this feeling of being right ?
+One reason , actually , has to do with a feeling of being wrong .
+So let me ask you guys something — or actually , let me ask you guys something , because you &apos;re right here : How does it feel — emotionally — how does it feel to be wrong ?
+Dreadful . Thumbs down .
+Embarrassing . Okay , wonderful , great .
+Dreadful , thumbs down , embarrassing — thank you , these are great answers , but they &apos;re answers to a different question .
+You guys are answering the question : How does it feel to realize you &apos;re wrong ?
+( Laughter ) Realizing you &apos;re wrong can feel like all of that and a lot of other things , right ?
+I mean it can be devastating , it can be revelatory , it can actually be quite funny , like my stupid Chinese character mistake .
+But just being wrong doesn &apos;t feel like anything .
+I &apos;ll give you an analogy .
+Do you remember that Loony Tunes cartoon where there &apos;s this pathetic coyote who &apos;s always chasing and never catching a roadrunner ?
+In pretty much every episode of this cartoon , there &apos;s a moment where the coyote is chasing the roadrunner and the roadrunner runs off a cliff , which is fine — he &apos;s a bird , he can fly .
+But the thing is , the coyote runs off the cliff right after him .
+And what &apos;s funny — at least if you &apos;re six years old — is that the coyote &apos;s totally fine too .
+He just keeps running — right up until the moment that he looks down and realizes that he &apos;s in mid-air .
+That &apos;s when he falls .
+When we &apos;re wrong about something — not when we realize it , but before that — we &apos;re like that coyote after he &apos;s gone off the cliff and before he looks down .
+You know , we &apos;re already wrong , we &apos;re already in trouble , but we feel like we &apos;re on solid ground .
+So I should actually correct something I said a moment ago .
+It does feel like something to be wrong ; it feels like being right .
+( Laughter ) So this is one reason , a structural reason , why we get stuck inside this feeling of rightness .
+I call this error blindness .
+Most of the time , we don &apos;t have any kind of internal cue to let us know that we &apos;re wrong about something , until it &apos;s too late .
+But there &apos;s a second reason that we get stuck inside this feeling as well — and this one is cultural .
+Think back for a moment to elementary school .
+You &apos;re sitting there in class , and your teacher is handing back quiz papers , and one of them looks like this .
+This is not mine , by the way .
+( Laughter ) So there you are in grade school , and you know exactly what to think about the kid who got this paper .
+It &apos;s the dumb kid , the troublemaker , the one who never does his homework .
+So by the time you are nine years old , you &apos;ve already learned , first of all , that people who get stuff wrong are lazy , irresponsible dimwits — and second of all , that the way to succeed in life is to never make any mistakes .
+We learn these really bad lessons really well .
+And a lot of us — and I suspect , especially a lot of us in this room — deal with them by just becoming perfect little A students , perfectionists , over-achievers .
+Right , Mr. CFO , astrophysicist , ultra-marathoner ?
+( Laughter ) You &apos;re all CFO , astrophysicists , ultra-marathoners , it turns out .
+Okay , so fine .
+Except that then we freak out at the possibility that we &apos;ve gotten something wrong .
+Because according to this , getting something wrong means there &apos;s something wrong with us .
+So we just insist that we &apos;re right , because it makes us feel smart and responsible and virtuous and safe .
+So let me tell you a story .
+A couple of years ago , a woman comes into Beth Israel Deaconess Medical Center for a surgery .
+Beth Israel &apos;s in Boston .
+It &apos;s the teaching hospital for Harvard — one of the best hospitals in the country .
+So this woman comes in and she &apos;s taken into the operating room .
+She &apos;s anesthetized , the surgeon does his thing — stitches her back up , sends her out to the recovery room .
+Everything seems to have gone fine .
+And she wakes up , and she looks down at herself , and she says , &quot; &quot; Why is the wrong side of my body in bandages ? &quot; &quot; Well the wrong side of her body is in bandages because the surgeon has performed a major operation on her left leg instead of her right one .
+When the vice president for health care quality at Beth Israel spoke about this incident , he said something very interesting .
+He said , &quot; &quot; For whatever reason , the surgeon simply felt that he was on the correct side of the patient . &quot; &quot; ( Laughter ) The point of this story is that trusting too much in the feeling of being on the correct side of anything can be very dangerous .
+This internal sense of rightness that we all experience so often is not a reliable guide to what is actually going on in the external world .
+And when we act like it is , and we stop entertaining the possibility that we could be wrong , well that &apos;s when we end up doing things like dumping 200 million gallons of oil into the Gulf of Mexico , or torpedoing the global economy .
+So this is a huge practical problem .
+But it &apos;s also a huge social problem .
+Think for a moment about what it means to feel right .
+It means that you think that your beliefs just perfectly reflect reality .
+And when you feel that way , you &apos;ve got a problem to solve , which is , how are you going to explain all of those people who disagree with you ?
+It turns out , most of us explain those people the same way , by resorting to a series of unfortunate assumptions .
+The first thing we usually do when someone disagrees with us is we just assume they &apos;re ignorant .
+They don &apos;t have access to the same information that we do , and when we generously share that information with them , they &apos;re going to see the light and come on over to our team .
+When that doesn &apos;t work , when it turns out those people have all the same facts that we do and they still disagree with us , then we move on to a second assumption , which is that they &apos;re idiots .
+( Laughter ) They have all the right pieces of the puzzle , and they are too moronic to put them together correctly .
+And when that doesn &apos;t work , when it turns out that people who disagree with us have all the same facts we do and are actually pretty smart , then we move on to a third assumption : they know the truth , and they are deliberately distorting it for their own malevolent purposes .
+So this is a catastrophe .
+This attachment to our own rightness keeps us from preventing mistakes when we absolutely need to and causes us to treat each other terribly .
+But to me , what &apos;s most baffling and most tragic about this is that it misses the whole point of being human .
+It &apos;s like we want to imagine that our minds are just these perfectly translucent windows and we just gaze out of them and describe the world as it unfolds .
+And we want everybody else to gaze out of the same window and see the exact same thing .
+That is not true , and if it were , life would be incredibly boring .
+The miracle of your mind isn &apos;t that you can see the world as it is .
+It &apos;s that you can see the world as it isn &apos;t .
+We can remember the past , and we can think about the future , and we can imagine what it &apos;s like to be some other person in some other place .
+And we all do this a little differently , which is why we can all look up at the same night sky and see this and also this and also this .
+And yeah , it is also why we get things wrong .
+1,200 years before Descartes said his famous thing about &quot; &quot; I think therefore I am , &quot; &quot; this guy , St. Augustine , sat down and wrote &quot; &quot; Fallor ergo sum &quot; &quot; — &quot; I err therefore I am . &quot;
+Augustine understood that our capacity to screw up , it &apos;s not some kind of embarrassing defect in the human system , something we can eradicate or overcome .
+It &apos;s totally fundamental to who we are .
+Because , unlike God , we don &apos;t really know what &apos;s going on out there .
+And unlike all of the other animals , we are obsessed with trying to figure it out .
+To me , this obsession is the source and root of all of our productivity and creativity .
+Last year , for various reasons , I found myself listening to a lot of episodes of the Public Radio show This American Life .
+And so I &apos;m listening and I &apos;m listening , and at some point , I start feeling like all the stories are about being wrong .
+And my first thought was , &quot; &quot; I &apos;ve lost it .
+I &apos;ve become the crazy wrongness lady .
+I just imagined it everywhere , &quot; &quot; which has happened .
+But a couple of months later , I actually had a chance to interview Ira Glass , who &apos;s the host of the show .
+And I mentioned this to him , and he was like , &quot; &quot; No actually , that &apos;s true .
+In fact , &quot; &quot; he says , &quot; &quot; as a staff , we joke that every single episode of our show has the same crypto-theme .
+And the crypto-theme is : &apos; I thought this one thing was going to happen and something else happened instead . &apos; And the thing is , &quot; &quot; says Ira Glass , &quot; &quot; we need this .
+We need these moments of surprise and reversal and wrongness to make these stories work . &quot; &quot; And for the rest of us , audience members , as listeners , as readers , we eat this stuff up .
+We love things like plot twists and red herrings and surprise endings .
+When it comes to our stories , we love being wrong .
+But , you know , our stories are like this because our lives are like this .
+We think this one thing is going to happen and something else happens instead .
+George Bush thought he was going to invade Iraq , find a bunch of weapons of mass destruction , liberate the people and bring democracy to the Middle East .
+And something else happened instead .
+And Hosni Mubarak thought he was going to be the dictator of Egypt for the rest of his life , until he got too old or too sick and could pass the reigns of power onto his son .
+And something else happened instead .
+And maybe you thought you were going to grow up and marry your high school sweetheart and move back to your hometown and raise a bunch of kids together .
+And something else happened instead .
+And I have to tell you that I thought I was writing an incredibly nerdy book about a subject everybody hates for an audience that would never materialize .
+And something else happened instead .
+( Laughter ) I mean , this is life .
+For good and for ill , we generate these incredible stories about the world around us , and then the world turns around and astonishes us .
+No offense , but this entire conference is an unbelievable monument to our capacity to get stuff wrong .
+We just spent an entire week talking about innovations and advancements and improvements , but you know why we need all of those innovations and advancements and improvements ?
+Because half the stuff that &apos;s the most mind-boggling and world-altering — TED 1998 — eh .
+( Laughter ) Didn &apos;t really work out that way , did it ? ( Laughter )
+Where &apos;s my jet pack , Chris ? ( Laughter )
+( Applause ) So here we are again .
+And that &apos;s how it goes .
+We come up with another idea .
+We tell another story .
+We hold another conference .
+The theme of this one , as you guys have now heard seven million times , is the rediscovery of wonder .
+And to me , if you really want to rediscover wonder , you need to step outside of that tiny , terrified space of rightness and look around at each other and look out at the vastness and complexity and mystery of the universe and be able to say , &quot; &quot; Wow , I don &apos;t know .
+Maybe I &apos;m wrong . &quot; &quot; Thank you .
+( Applause ) Thank you guys . ( Applause )
+On November 5th , 1990 , a man named El-Sayyid Nosair walked into a hotel in Manhattan and assassinated Rabbi Meir Kahane , the leader of the Jewish Defense League .
+Nosair was initially found not guilty of the murder , but while serving time on lesser charges , he and other men began planning attacks on a dozen New York City landmarks , including tunnels , synagogues and the United Nations headquarters .
+Thankfully , those plans were foiled by an FBI informant .
+Sadly , the 1993 bombing of the World Trade Center was not .
+Nosair would eventually be convicted for his involvement in the plot .
+El-Sayyid Nosair is my father .
+I was born in Pittsburgh , Pennsylvania in 1983 to him , an Egyptian engineer , and a loving American mother and grade school teacher , who together tried their best to create a happy childhood for me .
+It wasn &apos;t until I was seven years old that our family dynamic started to change .
+My father exposed me to a side of Islam that few people , including the majority of Muslims , get to see .
+It &apos;s been my experience that when people take the time to interact with one another , it doesn &apos;t take long to realize that for the most part , we all want the same things out of life .
+However , in every religion , in every population , you &apos;ll find a small percentage of people who hold so fervently to their beliefs that they feel they must use any means necessary to make others live as they do .
+A few months prior to his arrest , he sat me down and explained that for the past few weekends , he and some friends had been going to a shooting range on Long Island for target practice .
+He told me I &apos;d be going with him the next morning .
+We arrived at Calverton Shooting Range , which unbeknownst to our group was being watched by the FBI .
+That day , the last bullet I shot hit the small orange light that sat on top of the target and to everyone &apos;s surprise , especially mine , the entire target burst into flames .
+My uncle turned to the other men , and in Arabic said , &quot; &quot; Ibn abuh . &quot; &quot; Like father , like son .
+They all seemed to get a really big laugh out of that comment , but it wasn &apos;t until a few years later that I fully understood what they thought was so funny .
+They thought they saw in me the same destruction my father was capable of .
+Those men would eventually be convicted of placing a van filled with 1,500 pounds of explosives into the sub-level parking lot of the World Trade Center &apos;s North Tower , causing an explosion that killed six people and injured over 1,000 others .
+These were the men I looked up to .
+These were the men I called ammu , which means uncle .
+By the time I turned 19 , I had already moved 20 times in my life , and that instability during my childhood didn &apos;t really provide an opportunity to make many friends .
+Each time I would begin to feel comfortable around someone , it was time to pack up and move to the next town .
+Being the perpetual new face in class , I was frequently the target of bullies .
+I kept my identity a secret from my classmates to avoid being targeted , but as it turns out , being the quiet , chubby new kid in class was more than enough ammunition .
+So for the most part , I spent my time at home reading books and watching TV or playing video games .
+For those reasons , my social skills were lacking , to say the least , and growing up in a bigoted household , I wasn &apos;t prepared for the real world .
+I &apos;d been raised to judge people based on arbitrary measurements , like a person &apos;s race or religion .
+So what opened my eyes ?
+One of my first experiences that challenged this way of thinking was during the 2000 presidential elections .
+Through a college prep program , I was able to take part in the National Youth Convention in Philadelphia .
+My particular group &apos;s focus was on youth violence , and having been the victim of bullying for most of my life , this was a subject in which I felt particularly passionate .
+The members of our group came from many different walks of life .
+One day toward the end of the convention , I found out that one of the kids I had befriended was Jewish .
+Now , it had taken several days for this detail to come to light , and I realized that there was no natural animosity between the two of us .
+I had never had a Jewish friend before , and frankly I felt a sense of pride in having been able to overcome a barrier that for most of my life I had been led to believe was insurmountable .
+Another major turning point came when I found a summer job at Busch Gardens , an amusement park .
+There , I was exposed to people from all sorts of faiths and cultures , and that experience proved to be fundamental to the development of my character .
+Most of my life , I &apos;d been taught that homosexuality was a sin , and by extension , that all gay people were a negative influence .
+As chance would have it , I had the opportunity to work with some of the gay performers at a show there , and soon found that many were the kindest , least judgmental people I had ever met .
+Being bullied as a kid created a sense of empathy in me toward the suffering of others , and it comes very unnaturally to me to treat people who are kind in any other way than how I would want to be treated .
+Because of that feeling , I was able to contrast the stereotypes I &apos;d been taught as a child with real life experience and interaction .
+I don &apos;t know what it &apos;s like to be gay , but I &apos;m well acquainted with being judged for something that &apos;s beyond my control .
+Then there was &quot; &quot; The Daily Show . &quot; &quot; On a nightly basis , Jon Stewart forced me to be intellectually honest with myself about my own bigotry and helped me to realize that a person &apos;s race , religion or sexual orientation had nothing to do with the quality of one &apos;s character .
+He was in many ways a father figure to me when I was in desperate need of one .
+Inspiration can often come from an unexpected place , and the fact that a Jewish comedian had done more to positively influence my worldview than my own extremist father is not lost on me .
+One day , I had a conversation with my mother about how my worldview was starting to change , and she said something to me that I will hold dear to my heart for as long as I live .
+She looked at me with the weary eyes of someone who had experienced enough dogmatism to last a lifetime , and said , &quot; I &apos;m tired of hating people . &quot;
+In that instant , I realized how much negative energy it takes to hold that hatred inside of you .
+Zak Ebrahim is not my real name .
+I changed it when my family decided to end our connection with my father and start a new life .
+So why would I out myself and potentially put myself in danger ?
+Well , that &apos;s simple .
+I do it in the hopes that perhaps someone someday who is compelled to use violence may hear my story and realize that there is a better way , that although I had been subjected to this violent , intolerant ideology , that I did not become fanaticized .
+Instead , I choose to use my experience to fight back against terrorism , against the bigotry .
+I do it for the victims of terrorism and their loved ones , for the terrible pain and loss that terrorism has forced upon their lives .
+For the victims of terrorism , I will speak out against these senseless acts and condemn my father &apos;s actions .
+And with that simple fact , I stand here as proof that violence isn &apos;t inherent in one &apos;s religion or race , and the son does not have to follow the ways of his father .
+I am not my father .
+Thank you . ( Applause ) Thank you , everybody . ( Applause ) Thank you all . ( Applause ) Thanks a lot . ( Applause )
+Or it might be a choice about whether to have children , to have an ailing parent move in with you , to raise your child in a religion that your partner lives by but leaves you cold .
+In a hard choice , one alternative is better in some ways , the other alternative is better in other ways , and neither is better than the other overall .
+Realizing that small choices can also be hard , may make big hard choices seem less intractable .
+When I graduated from college , I couldn &apos;t decide between two careers , philosophy and law .
+But I came from a modest immigrant family where my idea of luxury was having a pork tongue and jelly sandwich in my school lunchbox , so the thought of spending my whole life sitting around in armchairs just thinking ...
+So I got out my yellow pad , I drew a line down the middle , and I tried my best to think of the reasons for and against each alternative .
+Hard choices are hard not because of us or our ignorance ; they &apos;re hard because there is no best option .
+So maybe the right thing to say in hard choices is that they &apos;re between equally good options .
+But that can &apos;t be right .
+If alternatives are equally good , you should just flip a coin between them , and it seems a mistake to think , here &apos;s how you should decide between careers , places to live , people to marry : Flip a coin .
+There are a variety of things that matter in such a choice , like the excitement of the work , achieving financial security , having time to raise a family , and so on .
+Maybe the artist &apos;s career puts you on the cutting edge of new forms of pictorial expression .
+As post-Enlightenment creatures , we tend to assume that scientific thinking holds the key to everything of importance in our world , but the world of value is different from the world of science .
+I like to say that the alternatives are &quot; &quot; on a par . &quot; &quot; When alternatives are on a par , it may matter very much which you choose , but one alternative isn &apos;t better than the other .
+Instead , you faced alternatives that were on a par — hard choices — and you made reasons for yourself to choose that hobby , that house and that job .
+When alternatives are on a par , the reasons given to us , the ones that determine whether we &apos;re making a mistake , are silent as to what to do .
+I am for chocolate donuts .
+When we create reasons for ourselves to become this kind of person rather than that , we wholeheartedly become the people that we are .
+So the lesson of hard choices : reflect on what you can put your agency behind , on what you can be for , and through hard choices , become that person .
+A few years ago , I felt like I was stuck in a rut , so I decided to follow in the footsteps of the great American philosopher , Morgan Spurlock , and try something new for 30 days .
+There &apos;s a few things I learned while doing these 30-day challenges .
+The first was , instead of the months flying by , forgotten , the time was much more memorable .
+This was part of a challenge I did to take a picture every day for a month .
+I would never have been that adventurous before I started my 30-day challenges .
+I also figured out that if you really want something badly enough , you can do anything for 30 days .
+By the way , the secret is not to go to sleep until you &apos;ve written your words for the day .
+You might be sleep-deprived , but you &apos;ll finish your novel .
+It &apos;s awful .
+( Laughter ) But for the rest of my life , if I meet John Hodgman at a TED party , I don &apos;t have to say , &quot; I &apos;m a computer scientist . &quot;
+No , no , if I want to , I can say , &quot; &quot; I &apos;m a novelist . &quot; &quot; ( Laughter ) So here &apos;s one last thing I &apos;d like to mention .
+I learned that when I made small , sustainable changes , things I could keep doing , they were more likely to stick .
+In fact , they &apos;re a ton of fun .
+( Applause )
+I feel incredibly lucky to be from a country that &apos;s generally considered to be the best place in the world to be a woman .
+In 1975 , when I was seven years old , women in Iceland went on a strike .
+They did no work that day , whether they held professional jobs or had the work of the home .
+They marched into the center of Reykjavík — 90 percent of women participated — and peacefully and in solidarity asked for equality .
+Nothing worked in Iceland that day , because nothing works when women are not at work .
+( Applause ) Five years later , Icelanders had the courage to be the first country in the world to democratically elect a woman as their president .
+I will never forget this day , that President Vigdís , as we know her by her first name , stepped out on the balcony of her own home , a single mom with her daughter by her side as she had won .
+( Applause ) This woman was an incredible role model for me and everyone growing up at that time , including boys .
+She frequently shares the story of how a young boy approached her after a couple of terms in office and asked , &quot; &quot; Can boys really grow up to be president ? &quot; &quot; ( Laughter ) Role models really matter , but even with such strong role models who I am so grateful for , when I was encouraged to run for president , my first reaction was , &quot; &quot; Who am I to run for president ?
+Who am I to be president ? &quot; &quot; It turns out that women are less likely to consider running than men .
+So a study done in the US in 2011 showed that 62 percent of men had considered running for office , but 45 percent of women .
+That &apos;s gap of 16 percentage points , and it &apos;s the same gap that existed a decade earlier .
+And it really is a shame , because I am so convinced that the world is in real need for women leaders and more principle-based leadership in general .
+So my decision to run ultimately came down to the fact that I felt that I had to do my bit , even if I had no political experience , to step up and try to be part of creating the world that will make sense and be sustainable for our kids , and a world where we truly allow both our boys and girls to be all they can be .
+And it was the journey of my life .
+It was amazing .
+The journey started with potentially as many as 20 candidates .
+It boiled down to nine candidates qualifying , and ultimately the race came down to four of us , three men and me .
+( Applause ) But that &apos;s not all the drama yet .
+You may think you have drama in the US , but I can — ( Laughter ) I can assure you we had our own drama in Iceland .
+So our sitting president of 20 years announced initially that he was not going to run , which is probably what gave rise to so many candidates considering running .
+Then later he changed his mind when our prime minister resigned following the infamous Panama Papers that implicated him and his family .
+And there was a popular protest in Iceland , so the sitting president thought they needed a trusted leader .
+A few days later , relations to his wife and her family &apos;s companies were also discovered in the Panama Papers , and so he withdrew from the race again .
+Before doing so , he said he was doing that because now there were two qualified men who he felt could fill his shoes running for office .
+So on May 9 , 45 days before election day , it was not looking too good for me .
+I did not even make the graph in the newspaper .
+The polls had me at 1 percent , but that was still the highest that any woman announcing her candidacy had earned .
+So it would be an understatement to say that I had to work extremely hard to get my seat at the table and access to television , because the network decided that they would only include those with 2.5 percent or more in the polls in the first TV debate .
+I found out on the afternoon of the first TV debate that I would participate along with the three men , and I found out on live TV that I came in at exactly 2.5 percent on the day of the first TV debate .
+( Applause ) So , challenges .
+The foremost challenges I had to face and overcome on this journey had to do with media , muscle and money .
+Let &apos;s start with media .
+There are those who say gender doesn &apos;t matter when it comes to media and politics .
+I can &apos;t say that I agree .
+It proved harder for me to both get access and airtime in media .
+As a matter of fact , the leading candidate appeared in broadcast media 87 times in the months leading up to the elections , whereas I appeared 31 times .
+And I am not saying media is doing this consciously .
+I think largely this has to do with unconscious bias , because in media , much like everywhere else , we have both conscious and unconscious bias , and we need to have the courage to talk about it if we want to change it .
+When I finally got access to TV , the first question I got was , &quot; &quot; Are you going to quit ? &quot; &quot; And that was a hard one .
+But of course , with 1 percent to 2.5 percent in the polls , maybe it &apos;s understandable .
+But media really matters , and every time I appeared on TV , we saw and experienced a rise in the polls , so I know firsthand how much this matters and why we have to talk about it .
+I was the only one out of the final four candidates that never got a front page interview .
+I was sometimes left out of the questions asked of all other candidates and out of coverage about the elections .
+So I did face this , but I will say this to compliment the Icelandic media .
+I got few if any comments about my hair and pantsuit .
+( Applause ) So kudos to them .
+But there is another experience that &apos;s very important .
+I ran as an independent candidate , not with any political party or muscle behind me .
+That lack of experience and lack of access to resources probably came at a cost to our campaign , but it also allowed us to innovate and do politics differently .
+We ran a positive campaign , and we probably changed the tone of the election for others by doing that .
+It may be the reason why I had less airtime on TV , because I wanted to show other contenders respect .
+When access to media proved to be so difficult , we ran our own media .
+I ran live Facebook sessions where I took questions from voters on anything and responded on the spot .
+And we put all the questions I got and all the answers on an open Facebook because we thought transparency is important if you want to establish trust .
+And when reaching young voters proved to be challenging , I became a Snapchatter .
+I got young people to teach me how to do that , and I used every filter on Snapchat during the last part of the campaign .
+And I actually had to use a lot of humor and humility , as I was very bad at it .
+But we grew the following amongst young people by doing that .
+So it &apos;s possible to run a different type of campaign .
+But unfortunately , one cannot talk about politics without mentioning money .
+I am sad that it is that way , but it &apos;s true , and we had less financial resources than the other candidates .
+This probably was partly due to the fact that I think I had a harder time asking for financial support .
+And maybe I also had the ambition to do more with less .
+Some would call that very womanly of me .
+But even with one third the media , one third the financial resources , and only an entrepreneurial team , but an amazing team , we managed to surprise everyone on election night , when the first numbers came in .
+I surprised myself , as you may see in that photo .
+( Laughter ) So the first numbers , I came in neck to neck to the leading candidate .
+( Cheers ) Well , too early , because I didn &apos;t quite pull that , but I came in second , and we went a long way from the one percent , with nearly a third of the vote , and we beat the polls by an unprecedented margin , or 10 percentage points above what the last poll came in at .
+Some people call me the real winner of the election because of this , and there are many people who encouraged me to run again .
+But what really makes me proud is to know that I earned proportionately higher percentage support from the young people , and a lot of people encouraged my daughter to run in 2040 .
+( Applause ) She is 13 , and she had never been on TV before .
+And on election day , I observed her on TV repeatedly , and she was smart , she was self-confident , she was sincere , and she was supportive of her mother .
+This was probably the highlight of my campaign .
+( Applause ) But there was another one .
+These are preschool girls out on a walk , and they found a poster of me on a bus stop , and they saw the need to kiss it .
+Audience : Aw !
+This picture was really enough of a win for me .
+What we see , we can be .
+So screw fear and challenges .
+( Applause ) It matters that women run , and it &apos;s time for women to run for office , be it the office of the CEO or the office of the president .
+I also managed to put an impression on your very own &quot; &quot; New Yorker . &quot; &quot; I earned a new title , &quot; &quot; A living emoji of sincerity . &quot; &quot; ( Cheers ) It is possibly my proudest title yet , and the reason is that women too often get penalized for using what I call their emotional capital , but I know from experience that we become so good when we do just that .
+( Applause ) And we need more of that .
+We celebrated as if we had won on election night , because that &apos;s how we felt .
+So you don &apos;t necessarily have to reach that office .
+You just have to go for it , and you , your family , your friends , everyone working with you , if you do it well , you will grow beyond anything you will experience before .
+So we had a good time , and I learned a lot on this journey , probably more lessons than I can share here in the time we have today .
+But rest assured , it was hard work .
+I lost a lot of sleep during those months .
+It took resilience and perseverance to not quit , but I learned something that I knew before on the one percent day , and that is that you can only be good when you are truly , authentically listening to your own voice and working in alignment with that .
+As a good sister of mine sometimes says , you may cheat on your intuition , but your intuition never cheats on you .
+I think it &apos;s also very important , and you all know this , that on any journey you go on , it &apos;s the team you take along .
+It &apos;s having people around you who share your values , your vision , but are different in every other way .
+That &apos;s the formula for success for me , and I am blessed with an amazing husband , here today , an incredible family — ( Applause ) and great friends , and we came together as entrepreneurs in the political arena , and pulled something off that everyone said would be impossible .
+As a matter of fact , the leading PR expert told me before I made my decision that I would do well to get seven percent .
+I appreciated his perspective , because he was probably right , and he was basing it on valuable experience .
+But on the one percent day , I decided here to show him that he was wrong .
+It &apos;s very important to mention this , because I did lose a lot of sleep , and I worked hard , and so did the people with me .
+We can never go the distance if we forget to take care of ourselves .
+And it &apos;s two things that I think are very important in that , in surrounding yourself with people and practices that nourish you , but it &apos;s equally important , maybe even more important , to have the courage to get rid of people and practices that take away your energy , including the wonderful bloggers and commentators .
+I took a lot of support from others in doing this , and I made the decision to go high when others went low , and that &apos;s partly how I kept my energy going throughout all of this .
+And when I lost my energy for a moment — and I did from time to time , it wasn &apos;t easy — I went back to why I decided to run , and how I had decided to run my own race .
+I called it a 4G campaign , the G &apos;s representing the Icelandic words .
+And the first one is called &quot; &quot; Gagn . &quot; &quot; I ran to do good , to be of service , and I wanted servant leadership to be at the center of how I worked and everybody else in the campaign .
+Second one is &quot; &quot; Gleði , &quot; &quot; or joy .
+I decided to enjoy the journey .
+There was a lot to be taken out of the journey , no matter if the destination was reached or not .
+And I tried my utmost to inspire others to do so as well .
+Third is &quot; &quot; Gagnsæi . &quot; &quot; I was open to any questions .
+I kept no secrets , and it was all open , on Facebook and websites .
+Because I think if you &apos;re choosing your president , you deserve answers to your questions .
+Last but not least , I don &apos;t need to explain that in this room , we ran on the principle of Girlpower .
+( Cheers ) I am incredibly glad that I had the courage to run , to risk failure but receive success on so many levels .
+I can &apos;t tell you that it was easy , but I can tell you , and I think my entire team will agree with me , that it was worth it .
+Thank you .
+( Applause ) Thank you . Thank you . ( Applause )
+Pat Mitchell : I &apos;m not letting you go yet . Halla Tómasdóttir : What a great crowd . PM : I can &apos;t let you go without saying
+that probably everybody in the room is ready to move to Iceland and vote for you .
+But of course we probably can &apos;t vote there , but one thing we can get from Iceland and have always gotten is inspiration .
+I mean , I &apos;m old enough to remember 1975 when all the Icelandic women walked out , and that really was a very big factor in launching the women &apos;s movement .
+You made a reference to it earlier . I &apos;d love to bring the picture back up and just have us remember what it was like when a country came to a standstill .
+And then what you may not know because our American media did not report it , the Icelandic women walked out again on Monday . Right ?
+HT : Yes , they did . PM : Can you tell us about that ?
+HT : Yes , so 41 years after the original strike , we may be the best place in the world to be a woman , but our work isn &apos;t done .
+So at 2 : 38pm on Monday , women in Iceland left work , because that &apos;s when they had earned their day &apos;s salary .
+( Applause ) What &apos;s really cool about this is that young women and men participated in greater numbers than before , because it is time that we close the pay gap .
+PM : So I &apos;m not going to ask Halla to commit right now to what she &apos;s doing next , but I will say that you &apos;d have a very large volunteer army should you decide to do that again .
+Thank you Halla .
+HT : Thank you all .
+( Applause )
+As a matter of fact , I was trying to think about my career since I left the White House , and the best example I have is a cartoon in The New Yorker a couple of years ago .
+This little boy is looking up at his father , and he says , &quot; &quot; Daddy , when I grow up , I want to be a former president . &quot; &quot; ( Laughter ) Well , I have had a great blessing as a former president , because I have had an access that very few other people in the world have ever had to get to know so many people around this whole universe .
+Not only am I familiar with the 50 states in the United States , but also my wife and I have visited more than 145 countries in the world , and the Carter Center has had full-time programs in 80 nations on Earth .
+And a lot of times , when we go into a country , we not only the meet the king or the president , but we also meet the villagers who live in the most remote areas of Africa .
+So our overall commitment at the Carter Center is to promote human rights , and knowing the world as I do , I can tell you without any equivocation that the number one abuse of human rights on Earth is , strangely , not addressed quite often , is the abuse of women and girls .
+( Applause ) There are a couple of reasons for this that I &apos;ll mention to begin with .
+First of all is the misinterpretation of religious scriptures , holy scriptures , in the Bible , Old Testament , New Testament , Quran and so forth , and these have been misinterpreted by men who are now in the ascendant positions in the synagogues and the churches and in the mosques .
+And they interpret these rules to make sure that women are ordinarily relegated to a secondary position compared to men in the eyes of God .
+A number of years ago , in the year 2000 , I had been a Baptist , a Southern Baptist for 70 years — I tell you , I still teach Sunday school every Sunday ; I &apos;ll be teaching this Sunday as well — but the Southern Baptist Convention in the year 2000 decided that women should play a secondary position , a subservient position to men .
+So they issued an edict , in effect , that prevents women from being priests , pastors , deacons in the church , or chaplains in the military , and if a woman teaches a classroom in a Southern Baptist seminary , they cannot teach if a boy is in the room , because you can find verses in the Bible , there &apos;s over 30,000 verses in the Bible , that say that a woman shouldn &apos;t teach a man , and so forth .
+But the basic thing is the scriptures are misinterpreted to keep men in an ascendant position .
+That is an all-pervasive problem , because men can exert that power and if an abusive husband or an employer , for instance , wants to cheat women , they can say that if women are not equal in the eyes of God , why should I treat them as equals myself ?
+Why should I pay them equal pay for doing the same kind of work ?
+The other very serious blight that causes this problem is the excessive resort to violence , and that is increasing tremendously around the world .
+In the United States of America , for instance , we have had an enormous increase in abuse of poor people , mostly black people and minorities , by putting them in prison .
+When I was in office as governor of Georgia , one out of every 1,000 Americans were in prison .
+Nowadays , 7.3 people per 1,000 are in prison .
+That &apos;s a sevenfold increase .
+And since I left the White House , there &apos;s been an 800 percent increase in the number of women who are black who are in prison .
+We also have &#91; one of the only countries &#93; on Earth that still has the death penalty that is a developed country .
+And we rank right alongside the countries that are most abusive in all elements of human rights in encouraging the death penalty .
+We &apos;re in California now , and I figured out the other day that California has spent four billion dollars in convicting 13 people for the death penalty .
+If you add that up , that &apos;s 307 million dollars it costs California to send a person to be executed .
+Nebraska this week just passed a law abolishing the death penalty , because it costs so much . ( Applause ) So the resort to violence and abuse of poor people and helpless people is another cause of the increase in abuse of women .
+Let me just go down a very few abuses of women that concern me most , and I &apos;ll be fairly brief , because I have a limited amount of time , as you know .
+One is genital mutilation .
+Genital mutilation is horrible and not known by American women , but in some countries , many countries , when a child is born that &apos;s a girl , very soon in her life , her genitals are completely cut away by a so-called cutter who has a razor blade and , in a non-sterilized way , they remove the exterior parts of a woman &apos;s genitalia .
+And sometimes , in more extreme cases but not very rare cases , they sew the orifice up so the girl can just urinate or menstruate .
+And then later , when she gets married , the same cutter goes in and opens the orifice up so she can have sex .
+This is not a rare thing , although it &apos;s against the law in most countries .
+In Egypt , for instance , 91 percent of all the females that live in Egypt today have been sexually mutilated in that way .
+In some countries , it &apos;s more than 98 percent of the women are cut that way before they reach maturity .
+This is a horrible affliction on all women that live in those countries .
+Another very serious thing is honor killings , where a family with misinterpretation , again , of a holy scripture — there &apos;s nothing in the Quran that mandates this — will execute a girl in their family if she is raped or if she marries a man that her father does not approve , or sometimes even if she wears inappropriate clothing .
+And this is done by members of her own family , so the family becomes murderers when the girl brings so-called disgrace to the family .
+An analysis was done in Egypt not so long ago by the United Nations and it showed that 75 percent of these murders of a girl are perpetrated by the father , the uncle or the brother , but 25 percent of the murders are conducted by women .
+Another problem that we have in the world that relates to women particularly is slavery , or human trafficking it &apos;s called nowadays .
+There were about 12.5 million people sold from Africa into slavery in the New World back in the 19th century and the 18th century .
+There are 30 million people now living in slavery .
+The United States Department of State now has a mandate from Congress to give a report every year , and the State Department reports that 800,000 people are sold across international borders every year into slavery , and that 80 percent of those sold are women , into sexual slavery .
+In the United States right this moment , 60,000 people are living in human bondage , or slavery .
+Atlanta , Georgia , where the Carter Center is located and where I teach at Emory University , they have between 200 and 300 women , people sold into slavery every month .
+It &apos;s the number one place in the nation because of that .
+Atlanta has the busiest airport in the world , and they also have a lot of passengers that come from the Southern Hemisphere .
+If a brothel owner wants to buy a girl that has brown or black skin , they can do it for 1,000 dollars .
+A white-skinned girl brings several times more than that , and the average brothel owner in Atlanta and in the United States now can earn about $ 35,000 per slave .
+The sex trade in Atlanta , Georgia , exceeds the total drug trade in Atlanta , Georgia .
+So this is another very serious problem , and the basic problem is prostitution , because there &apos;s not a whorehouse in America that &apos;s not known by the local officials , the local policemen , or the chief of police or the mayor and so forth .
+And this leads to one of the worst problems , and that is that women are bought increasingly and put into sexual slavery in all countries in the world .
+Sweden has got a good approach to it .
+About 15 to 20 years ago , Sweden decided to change the law , and women are no longer prosecuted if they are in sexual slavery , but the brothel owners and the pimps and the male customers are prosecuted , and — ( Applause ) — prostitution has gone down .
+In the United States , we take just the opposite position .
+For every male arrested for illegal sex trade , 25 women are arrested in the United States of America .
+Canada , Ireland , I &apos;ve already said Sweden , France , and other countries are moving now towards this so-called Swedish model .
+That &apos;s another thing that can be done .
+We have two great institutions in this country that all of us admire : our military and our great university system .
+In the military , they are now analyzing how many sexual assaults take place .
+The last report I got , there were 26,000 sexual assaults that took place in the military — 26,000 .
+Only 3,000 , not much more than 1 percent , are actually prosecuted , and the reason is that the commanding officer of any organization — a ship like my submarine , or a battalion in the Army or a company in the Marines — the commanding officer has the right under law to decide whether to prosecute a rapist or not , and of course , the last thing they want is for anybody to know that under their command , sexual assaults are taking place , so they do not do it .
+That law needs to be changed .
+About one out of four girls who enter American universities will be sexually assaulted before she graduates , and this is now getting a lot of publicity , partially because of my book , but other things , and so 89 universities in America are now condemned by the Department of Education under Title IX because the officials of the universities are not taking care of the women to protect them from sexual assault .
+The Department of Justice says that more than half of the rapes on a college campus take place by serial rapists , because outside of the university system , if they rape somebody , they &apos;ll be prosecuted , but when they get on a university campus , they can rape with impunity .
+They &apos;re not prosecuted .
+Those are the kinds of things that go on in our society .
+Another thing that &apos;s very serious about the abuse of women and girls is the lack of equal pay for equal work , as you know . ( Applause ) And this is sometimes misinterpreted , but for full-time employment , a woman in the United States now gets 23 percent less than a man .
+When I became president , the difference was 39 percent .
+So we &apos;ve made some progress , partially because I was president and so forth — ( Applause ) ( Laughter ) — but in the last 15 years , there &apos;s been no progress made , so it &apos;s been just about 23 or 24 percent difference for the last 15 years .
+These are the kind of things that go on .
+If you take the Fortune 500 companies , 23 of them have women CEOs , out of 500 , and those CEOs , I need not tell you , make less on an average than the other CEOs .
+Well , that &apos;s what goes on in our country .
+Another problem with the United States is we are the most warlike nation on Earth .
+We have been to war with about 25 different countries since the Second World War .
+Sometimes , we &apos;ve had soldiers on the ground fighting .
+The other times , we &apos;ve been flying overhead dropping bombs on people .
+Other times , of course , now , we have drones that attack people and so forth .
+We &apos;ve been at war with 25 different countries or more since the Second World War .
+There was four years , I won &apos;t say which ones , where we didn &apos;t — ( Applause ) — we didn &apos;t drop a bomb , we didn &apos;t launch a missile , we didn &apos;t fire a bullet .
+But anyway , those kinds of things , the resort to violence and the misinterpretation of the holy scriptures are what causes , are the basic causes , of abuse of women and girls .
+There &apos;s one more basic cause that I need not mention , and that is that in general , men don &apos;t give a damn .
+( Applause ) That &apos;s true .
+The average man that might say , I &apos;m against the abuse of women and girls quietly accepts the privileged position that we occupy , and this is very similar to what I knew when I was a child , when separate but equal had existed .
+Racial discrimination , legally , had existed for 100 years , from 1865 at the end of the War Between the States , the Civil War , all the way up to the 1960s , when Lyndon Johnson got the bills passed for equal rights .
+But during that time , there were many white people that didn &apos;t think that racial discrimination was okay , but they stayed quiet , because they enjoyed the privileges of better jobs , unique access to jury duty , better schools , and everything else , and that &apos;s the same thing that exists today , because the average man really doesn &apos;t care .
+Even though they say , &quot; &quot; I &apos;m against discrimination against girls and women , &quot; &quot; they enjoy a privileged position .
+And it &apos;s very difficult to get the majority of men who control the university system , the majority of men that control the military system , the majority of men that control the governments of the world , and the majority of men that control the great religions .
+So what is the basic thing that we need to do today ?
+I would say the best thing that we could do today is for the women in the powerful nations like this one , and where you come from , Europe and so forth , who have influence and who have freedom to speak and to act , need to take the responsibility on yourselves to be more forceful in demanding an end to racial discrimination against girls and women all over the world .
+The average woman in Egypt doesn &apos;t have much to say about her daughters getting genitally mutilated and so forth .
+But I hope that out of this conference , that every woman here will get your husbands to realize that these abuses on the college campuses and the military and so forth and in the future job market , need to protect your daughters and your granddaughters .
+I have 12 grandchildren , four children , and 10 great-grandchildren , and I think often about them and about the plight that they will face in America , not only if they lived in Egypt or a foreign country , in having equal rights , and I hope that all of you will join me in being a champion for women and girls around the world and protect their human rights .
+Thank you very much .
+( Applause )
+When I was a student here in Oxford in the 1970s , the future of the world was bleak .
+The population explosion was unstoppable .
+Global famine was inevitable .
+A cancer epidemic caused by chemicals in the environment was going to shorten our lives .
+The acid rain was falling on the forests .
+The oil was running out , and a nuclear winter would finish us off .
+None of those things happened , ( Laughter ) and astonishingly , if you look at what actually happened in my lifetime , the average per-capita income of the average person on the planet , in real terms , adjusted for inflation , has tripled .
+Lifespan is up by 30 percent in my lifetime .
+Child mortality is down by two-thirds .
+Per-capita food production is up by a third .
+How did we become the only species that becomes more prosperous as it becomes more populous ?
+The size of the blob in this graph represents the size of the population , and the level of the graph represents GDP per capita .
+I think to answer that question you need to understand how human beings bring together their brains and enable their ideas to combine and recombine , to meet and , indeed , to mate .
+In other words , you need to understand how ideas have sex .
+I want you to imagine how we got from making objects like this to making objects like this .
+Homo erectus made the same tool for 30,000 generations .
+Of course there were a few changes , but tools changed slower than skeletons in those days .
+It &apos;s an extraordinary phenomenon , but it &apos;s true .
+Whereas the object on the right is obsolete after five years .
+And there &apos;s another difference too , which is the object on the left is made from one substance .
+The object on the right is made from a confection of different substances , from silicon and metal and plastic and so on .
+And more than that , it &apos;s a confection of different ideas , the idea of plastic , the idea of a laser , the idea of transistors .
+They &apos;ve all been combined together in this technology .
+And it &apos;s this combination , this cumulative technology , that intrigues me , because I think it &apos;s the secret to understanding what &apos;s happening in the world .
+My body &apos;s an accumulation of ideas too : the idea of skin cells , the idea of brain cells , the idea of liver cells .
+They &apos;ve come together .
+How does evolution do cumulative , combinatorial things ?
+Well , it uses sexual reproduction .
+In an asexual species , if you get two different mutations in different creatures , a green one and a red one , then one has to be better than the other .
+One goes extinct for the other to survive .
+But if you have a sexual species , then it &apos;s possible for an individual to inherit both mutations from different lineages .
+So what sex does is it enables the individual to draw upon the genetic innovations of the whole species .
+It &apos;s not confined to its own lineage .
+What &apos;s the process that &apos;s having the same effect in cultural evolution as sex is having in biological evolution ?
+And I think the answer is exchange , the habit of exchanging one thing for another .
+It &apos;s a unique human feature .
+No other animal does it .
+As Adam Smith said , &quot; &quot; No man ever saw a dog make a fair exchange of a bone with another dog . &quot; &quot; ( Laughter ) You can have culture without exchange .
+You can have , as it were , asexual culture .
+Chimpanzees , killer whales , these kinds of creatures , they have culture .
+They teach each other traditions which are handed down from parent to offspring .
+In this case , chimpanzees teaching each other how to crack nuts with rocks .
+But the difference is that these cultures never expand , never grow , never accumulate , never become combinatorial , and the reason is because there is no sex , as it were , there is no exchange of ideas .
+Chimpanzee troops have different cultures in different troops .
+There &apos;s no exchange of ideas between them .
+And why does exchange raise living standards ?
+Well , the answer came from David Ricardo in 1817 .
+And here is a Stone Age version of his story , although he told it in terms of trade between countries .
+Adam takes four hours to make a spear and three hours to make an axe .
+Oz takes one hour to make a spear and two hours to make an axe .
+So Oz is better at both spears and axes than Adam .
+He doesn &apos;t need Adam .
+He can make his own spears and axes .
+Well no , because if you think about it , if Oz makes two spears and Adam make two axes , and then they trade , then they will each have saved an hour of work .
+And this is one of the beauties of exchange , is it actually creates the momentum for more specialization , which creates the momentum for more exchange and so on .
+Adam and Oz both saved an hour of time .
+Ask yourself how long you would have to work to provide for yourself an hour of reading light this evening to read a book by .
+If you had to start from scratch , let &apos;s say you go out into the countryside .
+How long is it going to take you ? Quite a long time .
+How long do you actually have to work to earn an hour of reading light if you &apos;re on the average wage in Britain today ?
+Back in 1950 , you would have had to work for eight seconds on the average wage to acquire that much light .
+And that &apos;s seven and a half seconds of prosperity that you &apos;ve gained since 1950 , as it were , because that &apos;s seven and a half seconds in which you can do something else , or you can acquire another good or service .
+And back in 1880 , it would have been 15 minutes to earn that amount of light on the average wage .
+Back in 1800 , you &apos;d have had to work six hours to earn a candle that could burn for an hour .
+Go back to this image of the axe and the mouse , and ask yourself : &quot; &quot; Who made them and for who ? &quot; &quot; The stone axe was made by someone for himself .
+But the object on the right was made for me by other people .
+How many other people ?
+Tens ? Hundreds ? Thousands ?
+You know , I think it &apos;s probably millions .
+They were all working for me , to make a mouse for me .
+And that &apos;s the way society works .
+That &apos;s what we &apos;ve achieved as a species .
+In the old days , if you were rich , you literally had people working for you .
+They made his silly outfits , like this , ( Laughter ) and they did his silly hairstyles , or whatever .
+He had 498 people to prepare his dinner every night .
+But a modern tourist going around the palace of Versailles and looking at Louis XIV &apos;s pictures , he has 498 people doing his dinner tonight too .
+They &apos;re in bistros and cafes and restaurants and shops all over Paris , and they &apos;re all ready to serve you at an hour &apos;s notice with an excellent meal that &apos;s probably got higher quality than Louis XIV even had .
+We &apos;re able to draw upon specialization and exchange to raise each other &apos;s living standards .
+Now , you do get other animals working for each other too .
+Ants are a classic example ; workers work for queens and queens work for workers .
+The queen does it all .
+( Laughter ) Even in England , we don &apos;t leave reproduction to the Queen .
+( Applause ) So when did this habit start ?
+Well , I think , probably , the oldest version of this is probably the sexual division of labor .
+But I &apos;ve got no evidence for that .
+In all hunter-gatherer societies today , there &apos;s a foraging division of labor between , on the whole , hunting males and gathering females .
+It isn &apos;t always quite that simple , but there &apos;s a distinction between specialized roles for males and females .
+And the beauty of this system is that it benefits both sides .
+The woman knows that , in the Hadzas &apos; case here — digging roots to share with men in exchange for meat — she knows that all she has to do to get access to protein is to dig some extra roots and trade them for meat .
+And the man knows that he doesn &apos;t have to do any digging to get roots .
+All he has to do is make sure that when he kills a warthog it &apos;s big enough to share some .
+When did this happen ? We don &apos;t know , but it &apos;s possible that Neanderthals didn &apos;t do this .
+They were a highly cooperative species .
+They were a highly intelligent species .
+But there &apos;s no evidence of a sexual division of labor .
+There &apos;s no evidence of gathering behavior by females .
+It looks like the females were cooperative hunters with the men .
+And the other thing there &apos;s no evidence for is exchange between groups , because the objects that you find in Neanderthal remains , the tools they made , are always made from local materials .
+For example , in the Caucasus there &apos;s a site where you find local Neanderthal tools .
+They &apos;re always made from local chert .
+In the same valley there are modern human remains from about the same date , 30,000 years ago , and some of those are from local chert , but more — but many of them are made from obsidian from a long way away .
+And when human beings began moving objects around like this , it was evidence that they were exchanging between groups .
+Trade is 10 times as old as farming .
+And the earliest evidence for it crops up somewhere between 80 and 120,000 years ago in Africa , when you see obsidian and jasper and other things moving long distances in Ethiopia .
+You also see seashells — as discovered by a team here in Oxford — moving 125 miles inland from the Mediterranean in Algeria .
+And that &apos;s evidence that people have started exchanging between groups .
+And that will have led to specialization .
+They traded them with their neighbors for things like stingray barbs , and the consequence was that stone axes ended up over a large part of Australia .
+What happens when you cut people off from exchange , from the ability to exchange and specialize ?
+And the answer is that not only do you slow down technological progress , you can actually throw it into reverse .
+An example is Tasmania .
+When the sea level rose and Tasmania became an island 10,000 years ago , the people on it not only experienced slower progress than people on the mainland , they actually experienced regress .
+They gave up the ability to make stone tools and fishing equipment and clothing because the population of about 4,000 people was simply not large enough to maintain the specialized skills necessary to keep the technology they had .
+It didn &apos;t happen in Tierra del Fuego — similar island , similar people .
+The reason : because Tierra del Fuego is separated from South America by a much narrower straight , and there was trading contact across that straight throughout 10,000 years .
+The Tasmanians were isolated .
+Go back to this image again and ask yourself , not only who made it and for who , but who knew how to make it .
+Nobody , literally nobody .
+The person on the assembly line doesn &apos;t know because he doesn &apos;t know how to drill an oil well to get oil out to make plastic , and so on .
+I am of course quoting from a famous essay by Leonard Read , the economist in the 1950s , called &quot; &quot; I , Pencil &quot; &quot; in which he wrote about how a pencil came to be made , and how nobody knows even how to make a pencil , because the people who assemble it don &apos;t know how to mine graphite , and they don &apos;t know how to fell trees and that kind of thing .
+And what we &apos;ve done in human society , through exchange and specialization , is we &apos;ve created the ability to do things that we don &apos;t even understand .
+It &apos;s not the same with language .
+But with technology , we can actually do things that are beyond our capabilities .
+And by the way , that &apos;s one of the reasons that I &apos;m not interested in the debate about I.Q. , about whether some groups have higher I.Q.s than other groups .
+It &apos;s completely irrelevant .
+What &apos;s relevant to a society is how well people are communicating their ideas , and how well they &apos;re cooperating , not how clever the individuals are .
+So we &apos;ve created something called the collective brain .
+We &apos;re just the nodes in the network .
+We &apos;re the neurons in this brain .
+It &apos;s the interchange of ideas , the meeting and mating of ideas between them , that is causing technological progress , incrementally , bit by bit .
+However , bad things happen .
+And in the future , as we go forward , we will , of course , experience terrible things .
+There will be wars ; there will be depressions ; there will be natural disasters .
+Awful things will happen in this century , I &apos;m absolutely sure .
+But I &apos;m also sure that , because of the connections people are making , and the ability of ideas to meet and to mate as never before , I &apos;m also sure that technology will advance , and therefore living standards will advance .
+Because through the cloud , through crowd sourcing , through the bottom-up world that we &apos;ve created , where not just the elites but everybody is able to have their ideas and make them meet and mate , we are surely accelerating the rate of innovation .
+Thank you .
+( Applause )
