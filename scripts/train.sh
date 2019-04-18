@@ -45,7 +45,7 @@ python ../models/nmt.py \
     --attention-type 'general' \
     --bidirectional \
     --tau 0.01 \
-    --gamma 1 \
+    --gamma 0.1 \
     --cost-fcn 'cosine' \
     --max-epoch 100 
 
