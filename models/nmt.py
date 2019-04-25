@@ -332,7 +332,7 @@ class NMT(object):
             inputs.append(self.decoder.embedding(input_tensor[t])) 
             # Compute mle scores and add them
             mle_scores += self.criterion(output.squeeze(0), input_tensor[t]) * (input_lengths > t).float()
-	
+		
 	# outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
 	inputs_vec = torch.stack(inputs).permute(1,0,2).contiguous().cuda()
 	outputs_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
