@@ -334,8 +334,8 @@ class NMT(object):
             mle_scores += self.criterion(output.squeeze(0), input_tensor[t]) * (input_lengths > t).float()
 
         # outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
-        inputs_vec = torch.stack(inputs).permute(1,0,2).contiguous().cuda()
-        outputs_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
+        input_vec = torch.stack(inputs).permute(1,0,2).contiguous().cuda()
+        output_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
         
         # the probability distributions for computing OT loss, taking into consideration the padded zeros
         weights = [[1./(l-1)]*(int(l)-1) + [0]*(max_len-int(l)) for l in input_lengths.tolist()] # shape = (batch_size, max_len-1)
