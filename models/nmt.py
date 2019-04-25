@@ -328,14 +328,14 @@ class NMT(object):
             output, last_hidden, context = self.decoder(src_encodings, last_hidden, input_tensor[t-1].unsqueeze(0), context)
             # Record vector representation of the input and output
             output_dist = F.softmax(output.squeeze(0)/self.tau, dim=1) # soft-argmax, w_t^SA in the paper 
-            outputs.append(output_dist.mm(self.decoder.embedding.weight).tolist())
-            inputs.append(self.decoder.embedding(input_tensor[t]).tolist()) 
+            outputs.append(output_dist.mm(self.decoder.embedding.weight))
+            inputs.append(self.decoder.embedding(input_tensor[t])) 
             # Compute mle scores and add them
             mle_scores += self.criterion(output.squeeze(0), input_tensor[t]) * (input_lengths > t).float()
-
-        # outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
-        output_vec = torch.cuda.FloatTensor(outputs).permute(1,0,2).contiguous()
-        input_vec = torch.cuda.FloatTensor(inputs).permute(1,0,2).contiguous()
+	
+	# outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
+	inputs_vec = torch.stack(inputs).permute(1,0,2).contiguous().cuda()
+	outputs_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
         # the probability distributions for computing OT loss, taking into consideration the padded zeros
         weights = [[1./(l-1)]*(int(l)-1) + [0]*(max_len-int(l)) for l in input_lengths.tolist()] # shape = (batch_size, max_len-1)
         input_weight = torch.cuda.FloatTensor(weights)
