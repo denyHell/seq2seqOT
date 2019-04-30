@@ -303,21 +303,21 @@ class NMT(object):
 
         # Numberize the target sentences
         numb_tgt_sents = self.vocab.tgt.numberize(tgt_sents)
-	numb_src_sents = self.vocab.tgt.numberize(src_sents)
+	    numb_src_sents = self.vocab.tgt.numberize(src_sents)
 
         # Pad each sentence to the maximum length
         tgt_max_len = max([len(sent) for sent in numb_tgt_sents])
-	src_max_len = max([len(sent) for sent in numb_src_sents])
+	    src_max_len = max([len(sent) for sent in numb_src_sents])
         padded_tgt_sent = [sent + [0]*(tgt_max_len - len(sent)) for sent in numb_tgt_sents]
         padded_src_sent = [sent + [0]*(src_max_len - len(sent)) for sent in numb_src_sents]
 	
         # Get the original sentence lengths
         tgt_input_lengths = torch.cuda.FloatTensor([len(sent) for sent in numb_tgt_sents])
-	src_input_lengths = torch.cuda.FloatTensor([len(sent) for sent in numb_src_sents])
+	    src_input_lengths = torch.cuda.FloatTensor([len(sent) for sent in numb_src_sents])
 
         # Construct a long tensor (seq_len * batch_size) 
         tgt_input_tensor = torch.cuda.LongTensor(padded_tgt_sent).t()  # shape = (max_len, batch_size)
-	src_input_tensor = torch.cuda.LongTensor(padded_src_sent).t()
+	    src_input_tensor = torch.cuda.LongTensor(padded_src_sent).t()
         mle_scores = torch.zeros(input_tensor[0].size()).cuda()
         last_hidden = decoder_init_state    
 
@@ -327,7 +327,7 @@ class NMT(object):
             context = torch.ones(1, len(tgt_sents), self.hidden_size).cuda()
 
         tgt_inputs = []
-	src_inputs = []
+	    src_inputs = []
         outputs = []
 
         for t in range(1, tgt_max_len):
@@ -341,18 +341,18 @@ class NMT(object):
             mle_scores += self.criterion(output.squeeze(0), tgt_input_tensor[t]) * (input_lengths > t).float()
         
         for t in range(1,src_max_len):
-	    src_inputs.append(self.encoder.embedding(src_input_tensor[t]))
+	        src_inputs.append(self.encoder.embedding(src_input_tensor[t]))
 		
         # outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
         tgt_input_vec = torch.stack(tgt_inputs).permute(1,0,2).contiguous().cuda()
-	src_input_vec = torch.stack(src_inputs).permute(1,0,2).contiguous().cuda()
+	    src_input_vec = torch.stack(src_inputs).permute(1,0,2).contiguous().cuda()
         output_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
         	
         # the probability distributions for computing OT loss, taking into consideration the padded zeros
         tgt_weights = [[1./(l-1)]*(int(l)-1) + [0]*(tgt_max_len-int(l)) for l in tgt_input_lengths.tolist()] # shape = (batch_size, max_len-1)
         src_weights = [[1./(l-1)]*(int(l)-1) + [0]*(src_max_len-int(l)) for l in src_input_lengths.tolist()] # shape = (batch_size, max_len-1)
-	tgt_input_weight = torch.cuda.FloatTensor(tgt_weights)
-	src_input_weight = torch.cuda.FloatTensor(src_weights)
+	    tgt_input_weight = torch.cuda.FloatTensor(tgt_weights)
+	    src_input_weight = torch.cuda.FloatTensor(src_weights)
         output_weight = torch.cuda.FloatTensor(tgt_weights)
 	
         # compute OT loss
@@ -362,7 +362,7 @@ class NMT(object):
             ot_Loss =  SamplesLoss("sinkhorn", cost = self.euclidean_cost, backend="tensorized")
         
         tgt_wass_xy = ot_Loss(tgt_input_weight, tgt_input_vec, output_weight, output_vec)
-	src_wass_xy = ot_Loss(src_input_weight, src_input_vec, output_weight, output_vec)
+	    src_wass_xy = ot_Loss(src_input_weight, src_input_vec, output_weight, output_vec)
         return (mle_scores/(input_lengths - 1) + self.gamma1 * tgt_wass_xy + self.gamma2 * src_wass_xy).mean(), mle_scores.sum() 
 
 
@@ -510,19 +510,19 @@ class NMT(object):
 
 
         # incorporate OT distance as selection criterion
-	numb_src_sent = self.vocab.src.numberize(src_sent)
+	    numb_src_sent = self.vocab.src.numberize(src_sent)
         src_tensor = torch.cuda.LongTensor(numb_src_sent)
-	n = len(src_tensor)
-	src_weight = torch.cuda.FloatTensor([[1./n] * n]).squeeze(0)
-	src_vec = self.encoder.embedding(src_tensor)
-	for h in hypotheses:
+	    n = len(src_tensor)
+	    src_weight = torch.cuda.FloatTensor([[1./n] * n]).squeeze(0)
+	    src_vec = self.encoder.embedding(src_tensor)
+	    for h in hypotheses:
 	    numb_h = [int(e) for e in h[0].split()]
-            h_tensor = torch.cuda.LongTensor(numb_h)
+        h_tensor = torch.cuda.LongTensor(numb_h)
 	    m = len(h_tensor)
 	    h_weight = torch.cuda.FloatTensor([[1./m] * m]).squeeze(0)
 	    h_vec = self.decoder.embedding(h_tensor)
 	    if self.cost_fcn == 'cosine':
-		ot_Loss =  SamplesLoss("sinkhorn", cost = self.cosine_cost, backend="tensorized" )
+		    ot_Loss =  SamplesLoss("sinkhorn", cost = self.cosine_cost, backend="tensorized" )
 	    if self.cost_fcn == 'l2':
 	        ot_Loss =  SamplesLoss("sinkhorn", cost = self.euclidean_cost, backend="tensorized")
 	    Wass_xy = ot_Loss(src_weight, src_vec, h_weight, h_vec)
@@ -637,7 +637,7 @@ def train(args: Dict[str, str]):
                 bidirectional=args['--bidirectional'],
                 tau=float(args['--tau']),
                 gamma1=float(args['--gamma1']),
-		gamma2=float(args['--gamma2']),
+		        gamma2=float(args['--gamma2']),
                 attention_type=args['--attention-type'],
                 cost_fcn = args['--cost-fcn'],
                 self_attention=args['--self-attention'],
