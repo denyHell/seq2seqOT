@@ -125,7 +125,7 @@ class NMT(object):
         self.bidirectional = bidirectional
         self.tau = tau
         self.gamma1 = gamma1
-	self.gamma2 = gamma2
+        self.gamma2 = gamma2
         self.cost_fcn = cost_fcn
         src_vocab_size = len(self.vocab.src.word2id)
         tgt_vocab_size = len(self.vocab.tgt.word2id)
