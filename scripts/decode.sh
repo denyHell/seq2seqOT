@@ -18,9 +18,8 @@ work_dir="results/$lang_pair"
 python ../models/nmt.py \
     decode \
     --cuda \
-    --beam-size 5 \
+    --beam-size 10 \
     --max-decoding-time-step 100 \
-    --dec-cri 'MLE' \
     ${work_dir}/model.bin \
     ${test_src} \
     ${work_dir}/decode.txt
