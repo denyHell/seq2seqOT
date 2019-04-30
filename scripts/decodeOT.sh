@@ -16,11 +16,10 @@ test_tgt="../data/test.$lang_pair.$target.txt"
 work_dir="results/$lang_pair"
 
 python ../models/nmt.py \
-    decode \
+    decodeOT \
     --cuda \
-    --beam-size 5 \
+    --beam-size 10 \
     --max-decoding-time-step 100 \
-    --dec-cri 'OT' \
     ${work_dir}/model.bin \
     ${test_src} \
     ${work_dir}/decode.txt
