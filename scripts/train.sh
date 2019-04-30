@@ -37,7 +37,7 @@ python ../models/nmt.py \
     --batch-size 16 \
     --hidden-size 512 \
     --embed-size 512 \
-    --uniform-init 0.1 \
+    --uniform-init 0.04 \
     --dropout 0.2 \
     --clip-grad 5.0 \
     --lr-decay 0.5 \
@@ -45,7 +45,8 @@ python ../models/nmt.py \
     --attention-type 'general' \
     --bidirectional \
     --tau 0.01 \
-    --gamma 0.1 \
+    --gamma1 0.1 \
+    --gamma2 0.1 \
     --cost-fcn 'cosine' \
     --max-epoch 100 
 
