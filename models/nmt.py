@@ -43,8 +43,8 @@ Options:
     --omodel=<file>                         location of original model
     --pmodel=<file>                         location of some other model
     --tau=<float>                           annealing parameter [default: 0.01]
-    --gamma=<float>                         trade-off between mle and ot loss [default: 0.2]
-    --dec-cri=<str>                         criterion in choosing the final translation [default: none]
+    --gamma1=<float>                         trade-off between mle and ot loss [default: 0.2]
+    --gamma2=<float>                         trade-off between mle and ot loss [default: 0.2]
 """
 
 import math
@@ -124,7 +124,8 @@ class NMT(object):
         self.vocab = vocab
         self.bidirectional = bidirectional
         self.tau = tau
-        self.gamma = gamma
+        self.gamma1 = gamma1
+	self.gamma2 = gamma2
         self.cost_fcn = cost_fcn
         src_vocab_size = len(self.vocab.src.word2id)
         tgt_vocab_size = len(self.vocab.tgt.word2id)
@@ -284,7 +285,7 @@ class NMT(object):
         return c
 
    
-    def decode(self, src_encodings: torch.Tensor, decoder_init_state: Any, tgt_sents: List[List[str]]) -> torch.Tensor:
+    def decode(self, src_encodings: torch.Tensor, decoder_init_state: Any, src_sents: List[List[str]], tgt_sents: List[List[str]]) -> torch.Tensor:
         """
         Given source encodings, compute the log-likelihood of predicting the gold-standard target
         sentence tokens
@@ -302,16 +303,21 @@ class NMT(object):
 
         # Numberize the target sentences
         numb_tgt_sents = self.vocab.tgt.numberize(tgt_sents)
+	numb_src_sents = self.vocab.tgt.numberize(src_sents)
 
         # Pad each sentence to the maximum length
-        max_len = max([len(sent) for sent in numb_tgt_sents])
-        padded_tgt_sent = [sent + [0]*(max_len - len(sent)) for sent in numb_tgt_sents]
-        
+        tgt_max_len = max([len(sent) for sent in numb_tgt_sents])
+	src_max_len = max([len(sent) for sent in numb_src_sents])
+        padded_tgt_sent = [sent + [0]*(tgt_max_len - len(sent)) for sent in numb_tgt_sents]
+        padded_src_sent = [sent + [0]*(src_max_len - len(sent)) for sent in numb_src_sents]
+	
         # Get the original sentence lengths
-        input_lengths = torch.cuda.FloatTensor([len(sent) for sent in numb_tgt_sents])
+        tgt_input_lengths = torch.cuda.FloatTensor([len(sent) for sent in numb_tgt_sents])
+	src_input_lengths = torch.cuda.FloatTensor([len(sent) for sent in numb_src_sents])
 
         # Construct a long tensor (seq_len * batch_size) 
-        input_tensor = torch.cuda.LongTensor(padded_tgt_sent).t()  # shape = (max_len, batch_size)
+        tgt_input_tensor = torch.cuda.LongTensor(padded_tgt_sent).t()  # shape = (max_len, batch_size)
+	src_input_tensor = torch.cuda.LongTensor(padded_src_sent).t()
         mle_scores = torch.zeros(input_tensor[0].size()).cuda()
         last_hidden = decoder_init_state    
 
@@ -320,27 +326,34 @@ class NMT(object):
         else:
             context = torch.ones(1, len(tgt_sents), self.hidden_size).cuda()
 
-        inputs = []
+        tgt_inputs = []
+	src_inputs = []
         outputs = []
 
-        for t in range(1, max_len):
+        for t in range(1, tgt_max_len):
             # Get output from the decoder
-            output, last_hidden, context = self.decoder(src_encodings, last_hidden, input_tensor[t-1].unsqueeze(0), context)
+            output, last_hidden, context = self.decoder(src_encodings, last_hidden, tgt_input_tensor[t-1].unsqueeze(0), context)
             # Record vector representation of the input and output
             output_dist = F.softmax(output.squeeze(0)/self.tau, dim=1) # soft-argmax, w_t^SA in the paper 
             outputs.append(output_dist.mm(self.decoder.embedding.weight))
-            inputs.append(self.decoder.embedding(input_tensor[t])) 
-            # Compute mle scores and add them
-            mle_scores += self.criterion(output.squeeze(0), input_tensor[t]) * (input_lengths > t).float()
-
-        # outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
-        input_vec = torch.stack(inputs).permute(1,0,2).contiguous().cuda()
-        output_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
+            tgt_inputs.append(self.decoder.embedding(tgt_input_tensor[t]))
+	    # Compute mle scores and add them
+            mle_scores += self.criterion(output.squeeze(0), tgt_input_tensor[t]) * (input_lengths > t).float()
         
+        for t in range(1,src_max_len):
+	    src_inputs.append(self.encoder.embedding(src_input_tensor[t]))
+		
+        # outputs and inputs have shape = (max_len-1, batch_size, embed_size), convert their shape to (batch_size, max_len-1, embed_size)
+        tgt_input_vec = torch.stack(tgt_inputs).permute(1,0,2).contiguous().cuda()
+	src_input_vec = torch.stack(src_inputs).permute(1,0,2).contiguous().cuda()
+        output_vec = torch.stack(outputs).permute(1,0,2).contiguous().cuda()
+        	
         # the probability distributions for computing OT loss, taking into consideration the padded zeros
-        weights = [[1./(l-1)]*(int(l)-1) + [0]*(max_len-int(l)) for l in input_lengths.tolist()] # shape = (batch_size, max_len-1)
-        input_weight = torch.cuda.FloatTensor(weights)
-        output_weight = torch.cuda.FloatTensor(weights)
+        tgt_weights = [[1./(l-1)]*(int(l)-1) + [0]*(tgt_max_len-int(l)) for l in tgt_input_lengths.tolist()] # shape = (batch_size, max_len-1)
+        src_weights = [[1./(l-1)]*(int(l)-1) + [0]*(src_max_len-int(l)) for l in src_input_lengths.tolist()] # shape = (batch_size, max_len-1)
+	tgt_input_weight = torch.cuda.FloatTensor(tgt_weights)
+	src_input_weight = torch.cuda.FloatTensor(src_weights)
+        output_weight = torch.cuda.FloatTensor(tgt_weights)
 	
         # compute OT loss
         if self.cost_fcn == 'cosine':
@@ -348,12 +361,13 @@ class NMT(object):
         if self.cost_fcn == 'l2':
             ot_Loss =  SamplesLoss("sinkhorn", cost = self.euclidean_cost, backend="tensorized")
         
-        Wass_xy = ot_Loss(input_weight, input_vec, output_weight, output_vec)
-        return (mle_scores/(input_lengths - 1) + self.gamma * Wass_xy).mean(), mle_scores.sum() 
+        tgt_wass_xy = ot_Loss(tgt_input_weight, tgt_input_vec, output_weight, output_vec)
+	src_wass_xy = ot_Loss(src_input_weight, src_input_vec, output_weight, output_vec)
+        return (mle_scores/(input_lengths - 1) + self.gamma1 * tgt_wass_xy + self.gamma2 * src_wass_xy).mean(), mle_scores.sum() 
 
 
 
-    def beam_search(self, src_sent: List[str], beam_size: int=5, max_decoding_time_step: int=70, dec_cri: str='MLE') -> List[Hypothesis]:
+    def beam_search(self, src_sent: List[str], beam_size: int=5, max_decoding_time_step: int=70) -> List[Hypothesis]:
         """
         Given a single source sentence, perform beam search
 
@@ -372,32 +386,6 @@ class NMT(object):
             context = torch.ones(1, 1, self.hidden_size * 2).cuda()
         else:
             context = torch.ones(1 , 1, self.hidden_size).cuda()
-        # Greedy Decoding for testing
-        
-        # previous_word = '<sos>'
-
-        # greedy_ouput = []
-        
-        # for _ in range(max_decoding_time_step):
-        
-        #     if previous_word == '</s>':             
-        #            break
-
-        #     word_indices = self.vocab.tgt.words2indices([[previous_word]])
-        #     word_indices = torch.cuda.LongTensor(word_indices)
-        #     scores, dec_init_state = self.decoder(dec_init_state, word_indices)
-        #     top_scores, score_indices = torch.topk(scores, k=1, dim=2)
-        #     top_scores = top_scores[0][0].data.cpu().numpy().tolist()
-        #     score_indices = score_indices[0][0].data.cpu().numpy().tolist()
-
-        #     # greedy decoding
-        #     max_score_word = self.vocab.tgt.word2id[scores_indices.index(max(top_scores))]
-        #     greedy_ouput.append(max_score_word)
-
-        #     # update previous word
-        #     previous_word = max_score_word 
-        
-        # return [Hypothesis(x, hypotheses[x]) for x in greedy_ouput]
 
         def to_cpu(h):
           return [e.cpu().detach() for e in h]
@@ -448,28 +436,99 @@ class NMT(object):
           nums = [int(e) for e in s.split()]
           return self.vocab.tgt.denumberize(nums)
 
-        if dec_cri == 'OT':
-            # incorporate OT distance as selection criterion
-            numb_src_sent = self.vocab.src.numberize(src_sent)
-            src_tensor = torch.cuda.LongTensor(numb_src_sent)
-            n = len(src_tensor)
-            src_weight = torch.cuda.FloatTensor([[1./n] * n]).squeeze(0)
-            src_vec = self.encoder.embedding(src_tensor)
-            for h in hypotheses:
-                numb_h = [int(e) for e in h[0].split()]
-                h_tensor = torch.cuda.LongTensor(numb_h)
-                m = len(h_tensor)
-                h_weight = torch.cuda.FloatTensor([[1./m] * m]).squeeze(0)
-                h_vec = self.decoder.embedding(h_tensor)
-                if self.cost_fcn == 'cosine':
-                    ot_Loss =  SamplesLoss("sinkhorn", cost = self.cosine_cost, backend="tensorized" )
-                if self.cost_fcn == 'l2':
-                    ot_Loss =  SamplesLoss("sinkhorn", cost = self.euclidean_cost, backend="tensorized")
-                Wass_xy = ot_Loss(src_weight, src_vec, h_weight, h_vec)
-                hypotheses[h][0] = Wass_xy.item() 
-
         return [Hypothesis(_denumberize(x), hypotheses[x][0]) for x in hypotheses] # namedtuple('Hypothesis', hypotheses.keys())(**hypotheses) 
-        
+
+
+    def beam_searchOT(self, src_sent: List[str], beam_size: int=5, max_decoding_time_step: int=70) -> List[Hypothesis]:
+        """
+        Given a single source sentence, perform beam search
+
+        Args:
+            src_sent: a single tokenized source sentence
+            beam_size: beam size
+            max_decoding_time_step: maximum number of time steps to unroll the decoding RNN
+
+        Returns:
+            hypotheses: a list of hypothesis, each hypothesis has two fields:
+                value: list[str]: the decoded target sentence, represented as a list of words
+                score: float: the log-likelihood of the target sentence
+        """
+        src, dec_init_state = self.encode([src_sent])
+        if self.bidirectional == True:
+            context = torch.ones(1, 1, self.hidden_size * 2).cuda()
+        else:
+            context = torch.ones(1 , 1, self.hidden_size).cuda()
+
+        def to_cpu(h):
+          return [e.cpu().detach() for e in h]
+
+        def to_cuda(h):
+          return [e.cuda().detach() for e in h]
+
+        # Beam search decoding
+        hypotheses = {str(self.vocab.tgt.word2id['<s>']): [0, to_cpu(dec_init_state), context.cpu().detach()]}
+        start_time = time.time() 
+        for t in range(max_decoding_time_step):
+            new_hypotheses = {}
+            for hyp,(score,hidden,context) in hypotheses.items():
+                previous_word = int(hyp.split()[-1])
+                if previous_word == self.vocab.tgt.word2id['</s>']:
+                    new_hypotheses[hyp] = [score,None,None]
+                    continue
+
+                # Create a tensor for the last word
+                last_word = torch.cuda.LongTensor([[previous_word]])
+
+                # Pass through the decoder
+                scores, new_hidden, new_context= self.decoder(src, to_cuda(hidden), last_word, context.cuda().detach())
+                new_hidden = to_cpu(new_hidden)
+                new_context = new_context.cpu().detach()
+                scores = F.log_softmax(scores, dim=2)
+                top_scores, score_indices = torch.topk(scores, k=beam_size+1, dim=2)
+
+                # If we get UNK, do one more step. Otherwise skip the last step.
+                seen_unk = False
+                for i in range(beam_size+1):
+                  if i == beam_size and not seen_unk:
+                    continue
+
+                  word_index = score_indices[0,0,i].item()
+                  if word_index == self.vocab.tgt.unk_id:
+                    seen_unk = True
+                    continue
+
+                  word = str(word_index)
+                  new_score = score + top_scores[0,0,i].item()
+                  new_hypotheses[hyp + " " + word] = [new_score, new_hidden, new_context]
+
+            # Prune the hypotheses for the next step
+            hypotheses = dict(sorted(new_hypotheses.items(), key=lambda t: t[1][0]/len(t[0].split()), reverse=True)[:beam_size])
+        #print(" %s --- beam" %(time.time() - start_time))
+        def _denumberize(s):
+          nums = [int(e) for e in s.split()]
+          return self.vocab.tgt.denumberize(nums)
+
+
+        # incorporate OT distance as selection criterion
+	numb_src_sent = self.vocab.src.numberize(src_sent)
+        src_tensor = torch.cuda.LongTensor(numb_src_sent)
+	n = len(src_tensor)
+	src_weight = torch.cuda.FloatTensor([[1./n] * n]).squeeze(0)
+	src_vec = self.encoder.embedding(src_tensor)
+	for h in hypotheses:
+	    numb_h = [int(e) for e in h[0].split()]
+            h_tensor = torch.cuda.LongTensor(numb_h)
+	    m = len(h_tensor)
+	    h_weight = torch.cuda.FloatTensor([[1./m] * m]).squeeze(0)
+	    h_vec = self.decoder.embedding(h_tensor)
+	    if self.cost_fcn == 'cosine':
+		ot_Loss =  SamplesLoss("sinkhorn", cost = self.cosine_cost, backend="tensorized" )
+	    if self.cost_fcn == 'l2':
+	        ot_Loss =  SamplesLoss("sinkhorn", cost = self.euclidean_cost, backend="tensorized")
+	    Wass_xy = ot_Loss(src_weight, src_vec, h_weight, h_vec)
+	    hypotheses[h][0] = Wass_xy.item() 
+
+        return [Hypothesis(_denumberize(x), hypotheses[x][0]) for x in hypotheses]
 
     def evaluate_ppl(self, dev_data: List[Any], batch_size: int=32):
         """
@@ -577,7 +636,8 @@ def train(args: Dict[str, str]):
                 num_layers=int(args['--num-layers']),
                 bidirectional=args['--bidirectional'],
                 tau=float(args['--tau']),
-                gamma=float(args['--gamma']),
+                gamma1=float(args['--gamma1']),
+		gamma2=float(args['--gamma2']),
                 attention_type=args['--attention-type'],
                 cost_fcn = args['--cost-fcn'],
                 self_attention=args['--self-attention'],
@@ -721,11 +781,20 @@ def train(args: Dict[str, str]):
                     exit(0)
 
 
-def beam_search(model: NMT, test_data_src: List[List[str]], beam_size: int, max_decoding_time_step: int, dec_cri: str) -> List[List[Hypothesis]]:
+def beam_search(model: NMT, test_data_src: List[List[str]], beam_size: int, max_decoding_time_step: int) -> List[List[Hypothesis]]:
 
     hypotheses = []
     for src_sent in tqdm(test_data_src, desc='Decoding', file=sys.stdout):
-        example_hyps = model.beam_search(src_sent, beam_size=beam_size, max_decoding_time_step=max_decoding_time_step, dec_cri=dec_cri)
+        example_hyps = model.beam_search(src_sent, beam_size=beam_size, max_decoding_time_step=max_decoding_time_step)
+        hypotheses.append(example_hyps)
+
+    return hypotheses
+
+def beam_searchOT(model: NMT, test_data_src: List[List[str]], beam_size: int, max_decoding_time_step: int) -> List[List[Hypothesis]]:
+
+    hypotheses = []
+    for src_sent in tqdm(test_data_src, desc='Decoding', file=sys.stdout):
+        example_hyps = model.beam_searchOT(src_sent, beam_size=beam_size, max_decoding_time_step=max_decoding_time_step)
         hypotheses.append(example_hyps)
 
     return hypotheses
@@ -753,8 +822,47 @@ def decode(args: Dict[str, str]):
 
     hypotheses = beam_search(model, test_data_src,
                              beam_size=int(args['--beam-size']),
-                             max_decoding_time_step=int(args['--max-decoding-time-step']),
-                             dec_cri=args['--dec-cri'])
+                             max_decoding_time_step=int(args['--max-decoding-time-step']))
+
+    if args['TEST_TARGET_FILE']:
+        top_hypotheses = [hyps[0] for hyps in hypotheses]
+        bleu_score = compute_corpus_level_bleu_score(test_data_tgt, top_hypotheses)
+        print(f'Corpus BLEU: {bleu_score}', file=sys.stderr)
+
+    with open(args['OUTPUT_FILE'], 'w') as f:
+        for src_sent, hyps in zip(test_data_src, hypotheses):
+            top_hyp = hyps[0]
+            hyp_sent = ' '.join(top_hyp.value.split()[1:-1])
+            f.write(hyp_sent + '\n')
+
+    # Back to train (not really necessary for now)
+    model.encoder.train()
+    model.decoder.train()
+	  
+
+def decodeOT(args: Dict[str, str]):
+    """
+    performs decoding on a test set, and save the best-scoring decoding results. 
+    If the target gold-standard sentences are given, the function also computes
+    corpus-level BLEU score.
+    """
+    test_data_src = read_corpus(args['TEST_SOURCE_FILE'], source='src')
+    if args['TEST_TARGET_FILE']:
+        test_data_tgt = read_corpus(args['TEST_TARGET_FILE'], source='tgt')
+
+    print(f"load model from {args['MODEL_PATH']}", file=sys.stderr)
+    if os.path.exists(args['MODEL_PATH']):
+        model = NMT.load(args['MODEL_PATH'])
+    else:
+        model = NMT(256, 256, pickle.load(open('data/vocab.bin', 'rb')))
+
+    # Set models to eval (disables dropout)
+    model.encoder.eval()
+    model.decoder.eval()
+
+    hypotheses = beam_searchOT(model, test_data_src,
+                             beam_size=int(args['--beam-size']),
+                             max_decoding_time_step=int(args['--max-decoding-time-step']))
 
     if args['TEST_TARGET_FILE']:
         top_hypotheses = [hyps[0] for hyps in hypotheses]
