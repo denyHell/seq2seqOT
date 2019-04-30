@@ -112,7 +112,8 @@ class NMT(object):
                  attention_type,
                  self_attention,
                  tau,
-                 gamma,
+                 gamma1,
+		 gamma2,
                  cost_fcn,
                  uniform_init, embedding_file=None):
                     
